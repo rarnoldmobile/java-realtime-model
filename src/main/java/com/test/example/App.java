@@ -42,5 +42,32 @@ public class App
         //Evaluate the data
         Vector prediction = (Vector)engine.eval("evaluate(" + newData.y + ")");
         System.out.println(prediction.getElementAsDouble(0));
+        
+        //Some timings
+        long startTime = System.currentTimeMillis();
+        prediction = (Vector)engine.eval("evaluate(" + newData.y + ")");
+        prediction = (Vector)engine.eval("evaluate(" + newData.y + ")");
+        prediction = (Vector)engine.eval("evaluate(" + newData.y + ")");
+        prediction = (Vector)engine.eval("evaluate(" + newData.y + ")");
+        prediction = (Vector)engine.eval("evaluate(" + newData.y + ")");
+        prediction = (Vector)engine.eval("evaluate(" + newData.y + ")");
+        prediction = (Vector)engine.eval("evaluate(" + newData.y + ")");
+        prediction = (Vector)engine.eval("evaluate(" + newData.y + ")");
+        prediction = (Vector)engine.eval("evaluate(" + newData.y + ")");
+        prediction = (Vector)engine.eval("evaluate(" + newData.y + ")");
+        prediction = (Vector)engine.eval("evaluate(" + newData.y + ")");
+        prediction = (Vector)engine.eval("evaluate(" + newData.y + ")");
+        prediction = (Vector)engine.eval("evaluate(" + newData.y + ")");
+        prediction = (Vector)engine.eval("evaluate(" + newData.y + ")");
+        prediction = (Vector)engine.eval("evaluate(" + newData.y + ")");
+        prediction = (Vector)engine.eval("evaluate(" + newData.y + ")");
+        prediction = (Vector)engine.eval("evaluate(" + newData.y + ")");
+        prediction = (Vector)engine.eval("evaluate(" + newData.y + ")");
+        prediction = (Vector)engine.eval("evaluate(" + newData.y + ")");
+        prediction = (Vector)engine.eval("evaluate(" + newData.y + ")");
+        long endTime = System.currentTimeMillis();
+
+        long duration = (endTime - startTime);
+        System.out.println(duration);
     }
 }
